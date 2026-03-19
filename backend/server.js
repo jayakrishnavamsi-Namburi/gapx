@@ -36,13 +36,15 @@ app.use(
 /* ===============================
    🔥 CORS FIX
 ================================= */
-app.use(cors({
-  origin: [
-    "http://localhost:5173",
-    "https://gapx-frontend.vercel.app"
-  ],
-  credentials: true,
-}));
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://gapx-gray.vercel.app"
+    ],
+    credentials: true,
+  })
+);
 
 app.use(express.json());
 
