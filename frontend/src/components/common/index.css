@@ -1,0 +1,123 @@
+/* RUNNING PERSON - ADD TO YOUR EXISTING STYLES */
+.runner-loading {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.runner-figure {
+  position: relative;
+  width: 80px;
+  height: 120px;
+  animation: run 1.2s infinite ease-in-out;
+}
+
+.runner-head {
+  width: 24px;
+  height: 24px;
+  background: #fbbf24;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 3px solid #f59e0b;
+}
+
+.runner-body {
+  width: 20px;
+  height: 40px;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  border-radius: 10px 10px 4px 4px;
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.runner-arm {
+  width: 8px;
+  height: 30px;
+  background: #fbbf24;
+  position: absolute;
+  top: 28px;
+  border-radius: 4px;
+}
+
+.runner-arm.arm-left {
+  left: 28px;
+  transform-origin: top right;
+  animation: armSwing 0.6s infinite ease-in-out;
+}
+
+.runner-arm.arm-right {
+  right: 28px;
+  transform-origin: top left;
+  animation: armSwing 0.6s infinite ease-in-out reverse;
+}
+
+.runner-leg {
+  width: 10px;
+  height: 35px;
+  background: #ef4444;
+  position: absolute;
+  bottom: 0;
+  border-radius: 5px 5px 2px 2px;
+}
+
+.runner-leg.leg-left {
+  left: 30px;
+  transform-origin: top right;
+  animation: legSwing 0.6s infinite ease-in-out;
+}
+
+.runner-leg.leg-right {
+  right: 30px;
+  transform-origin: top left;
+  animation: legSwing 0.6s infinite ease-in-out reverse;
+}
+
+.runner-trail {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(to top, rgba(59, 130, 246, 0.6), transparent);
+  transform: translateX(-50%);
+  animation: trail 1.2s infinite ease-in-out;
+  border-radius: 2px;
+}
+
+@keyframes run {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes armSwing {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-30deg); }
+  75% { transform: rotate(20deg); }
+}
+
+@keyframes legSwing {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(20deg); }
+  75% { transform: rotate(-30deg); }
+}
+
+@keyframes trail {
+  0%, 100% { opacity: 0.3; height: 20px; }
+  50% { opacity: 1; height: 30px; }
+}
+
+.loading-text {
+  margin-top: 2rem;
+  color: #64748b;
+  font-size: 1.1rem;
+  font-weight: 500;
+}

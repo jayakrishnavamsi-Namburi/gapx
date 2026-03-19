@@ -1,0 +1,121 @@
+.my-roadmaps-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  min-height: calc(100vh - 80px);
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.my-roadmaps-header {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.my-roadmaps-loading {
+  text-align: center;
+  font-size: 1.125rem;
+  color: #64748b;
+  padding: 4rem 2rem;
+  font-weight: 500;
+}
+
+.my-roadmaps-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #64748b;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.my-roadmaps-empty button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 0.75rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 14px rgba(102, 126, 234, 0.4);
+}
+
+.my-roadmaps-empty button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+}
+
+.my-roadmaps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.my-roadmaps-error {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #ef4444;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.my-roadmaps-error button {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.my-roadmaps-error button:hover {
+  background: #dc2626;
+  transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .my-roadmaps-container {
+    padding: 1.5rem 1rem;
+  }
+  
+  .my-roadmaps-header {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .my-roadmaps-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .my-roadmaps-empty,
+  .my-roadmaps-loading,
+  .my-roadmaps-error {
+    padding: 3rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-roadmaps-header {
+    font-size: 1.5rem;
+  }
+  
+  .my-roadmaps-grid {
+    gap: 0.75rem;
+  }
+}
