@@ -473,7 +473,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "../../components/common/Navbar.jsx";
-import { getMyResumesApi } from "../../api/resumeApi.jsx";
+import { getMyResumesApi } from "../../api/resumeApi";
 import { useNavigate } from "react-router-dom";
 
 const MyResumes = () => {

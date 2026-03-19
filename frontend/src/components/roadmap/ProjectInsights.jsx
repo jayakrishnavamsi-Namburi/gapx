@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getProjectInsightsApi } from "../../api/projectInsightApi.jsx";
+import { getProjectInsightsApi } from "../../api/projectInsightApi";
 import LoadingSpinner from "../../components/common/LoadingSpinner.jsx"; // ✅ Fixed 
 
 const ProjectInsights = ({ domain, salaryRange, companyType }) => {

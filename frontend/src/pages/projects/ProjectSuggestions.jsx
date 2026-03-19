@@ -100,7 +100,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "../../components/common/Navbar.jsx";
-import { suggestProjectsApi } from "../../api/projectApi.jsx";
+import { suggestProjectsApi } from "../../api/projectApi";
 
 const ProjectSuggestions = () => {
   const [form, setForm] = useState({
