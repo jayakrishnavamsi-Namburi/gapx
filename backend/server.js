@@ -37,7 +37,10 @@ app.use(
    🔥 CORS FIX
 ================================= */
 app.use(cors({
-  origin: true,   // ✅ allows all safely
+  origin: [
+    "http://localhost:5173",
+    "https://gapx-frontend.vercel.app"
+  ],
   credentials: true,
 }));
 
