@@ -841,13 +841,13 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import Navbar from "../../components/common/Navbar";
-import Footer from "../../components/common/Footer";
-import { getMyRoadmapsApi } from "../../api/roadmapApi";
-import { getQuizStatsApi } from "../../api/quizApi";
-import { getMyResumesApi, downloadResumeApi } from "../../api/resumeApi";
-import ProgressBar from "../../components/dashboard/ProgressBar";
-import WeeklyStreak from "../../components/dashboard/WeeklyStreak";
+import Navbar from "../../components/common/Navbar.jsx";
+import Footer from "../../components/common/Footer.jsx";
+import { getMyRoadmapsApi } from "../../api/roadmapApi.jsx";
+import { getQuizStatsApi } from "../../api/quizApi.jsx";
+import { getMyResumesApi, downloadResumeApi } from "../../api/resumeApi.jsx";
+import ProgressBar from "../../components/dashboard/ProgressBar.jsx";
+import WeeklyStreak from "../../components/dashboard/WeeklyStreak.jsx";
 import { AuthContext } from "../../context/AuthContext";
 import { useContext } from "react";
 const Dashboard = () => {

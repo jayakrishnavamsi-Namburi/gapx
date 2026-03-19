@@ -395,7 +395,7 @@
 
 
 import { useState } from "react";
-import TopicCheckbox from "../../components/roadmap/TopicCheckbox";
+import TopicCheckbox from "../../components/roadmap/TopicCheckbox.jsx";
 
 const WeekCard = ({
   week,

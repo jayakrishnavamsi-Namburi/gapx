@@ -270,10 +270,10 @@
 
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Navbar from "../../components/common/Navbar";
+import Navbar from "../../components/common/Navbar.jsx";
 import { getSingleRoadmapApi } from "../../api/roadmapApi";
-import ProjectInsights from "../../components/roadmap/ProjectInsights";
-import LoadingSpinner from "../../components/common/LoadingSpinner";
+import ProjectInsights from "../../components/roadmap/ProjectInsights.jsx";
+import LoadingSpinner from "../../components/common/LoadingSpinner.jsx";
 
 const ProjectInsightsView = () => {
   const { id } = useParams();

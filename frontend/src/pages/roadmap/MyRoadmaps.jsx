@@ -98,8 +98,8 @@
 import { useCallback, useEffect, useState } from "react";
 import { getMyRoadmapsApi } from "../../api/roadmapApi";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../../components/common/Navbar";
-import RoadmapCard from "../../components/roadmap/RoadmapCard";
+import Navbar from "../../components/common/Navbar.jsx";
+import RoadmapCard from "../../components/roadmap/RoadmapCard.jsx";
 
 const MyRoadmaps = () => {
   const [roadmaps, setRoadmaps] = useState([]);

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { getProjectInsightsApi } from "../../api/projectInsightApi";
-import LoadingSpinner from "../../components/common/LoadingSpinner"; // ✅ Fixed 
+import { getProjectInsightsApi } from "../../api/projectInsightApi.jsx";
+import LoadingSpinner from "../../components/common/LoadingSpinner.jsx"; // ✅ Fixed 
 
 const ProjectInsights = ({ domain, salaryRange, companyType }) => {
   const [projects, setProjects] = useState([]);

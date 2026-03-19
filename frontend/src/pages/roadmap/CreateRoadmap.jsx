@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { generateRoadmapApi } from "../../api/roadmapApi";
-import Navbar from "../../components/common/Navbar";
+import Navbar from "../../components/common/Navbar.jsx";
 
 const CreateRoadmap = () => {
   const navigate = useNavigate();

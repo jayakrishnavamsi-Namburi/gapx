@@ -327,8 +327,8 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/common/Navbar";
-import Footer from "../components/common/Footer";
+import Navbar from "../components/common/Navbar.jsx";
+import Footer from "../components/common/Footer.jsx";
 import { getDomainWiseHistoryApi, getQuizStatsApi } from "../api/quizApi";
 
 // Chart.js imports for advanced graphs

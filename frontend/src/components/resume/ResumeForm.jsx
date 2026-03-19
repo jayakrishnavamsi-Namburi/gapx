@@ -276,9 +276,9 @@
 
 
 
-import ExperienceInput from "./ExperienceInput";
-import ProjectInput from "./ProjectInput";
-import EducationInput from "./EducationInput";
+import ExperienceInput from "./ExperienceInput.jsx";
+import ProjectInput from "./ProjectInput.jsx";
+import EducationInput from "./EducationInput.jsx";
 
 const ResumeForm = ({
   form,

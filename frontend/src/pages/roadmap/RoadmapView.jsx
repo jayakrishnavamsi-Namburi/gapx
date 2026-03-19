@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import Navbar from "../../components/common/Navbar";
+import Navbar from "../../components/common/Navbar.jsx";
 import { getSingleRoadmapApi, updateProgressApi } from "../../api/roadmapApi";
-import WeekCard from "./WeekCard";
+import WeekCard from "./WeekCard.jsx";
 
 const RoadmapView = () => {
   const { id } = useParams();

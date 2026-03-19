@@ -423,8 +423,8 @@
 
 import React, { useEffect, useState } from "react";
 import api from "../../api/api.js";
-import Navbar from "../../components/common/Navbar";
-import Footer from "../../components/common/Footer";
+import Navbar from "../../components/common/Navbar.jsx";
+import Footer from "../../components/common/Footer.jsx";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function CalendarTasks() {

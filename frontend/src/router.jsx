@@ -3,38 +3,39 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 
 /* ---------- AUTH ---------- */
-import Login from "./pages/auth/Login";
-import Register from "./pages/auth/Register";
-import ChangePassword from "./pages/profile/ChangePassword";
+import Login from "./pages/auth/Login.jsx";
+import Register from "./pages/auth/Register.jsx";
+import ChangePassword from "./pages/profile/ChangePassword.jsx";
 
 
 /* ---------- DASHBOARD ---------- */
-import Dashboard from "./pages/dashboard/Dashboard";
+import Dashboard from "./pages/dashboard/Dashboard.jsx";
 
 /* ---------- ROADMAP ---------- */
-import CreateRoadmap from "./pages/roadmap/CreateRoadmap";
-import MyRoadmaps from "./pages/roadmap/MyRoadmaps";
-import RoadmapView from "./pages/roadmap/RoadmapView";
+import CreateRoadmap from "./pages/roadmap/CreateRoadmap.jsx";
+import MyRoadmaps from "./pages/roadmap/MyRoadmaps.jsx";
+import RoadmapView from "./pages/roadmap/RoadmapView.jsx";
 import ProjectInsightsView from "./pages/roadmap/ProjectInsightsView.jsx"; // ✅ Moved up
 
 /* ---------- RESUME ---------- */
-import CreateResume from "./pages/resume/CreateResume";
-import MyResumes from "./pages/resume/MyResumes";
-import ResumeView from "./pages/resume/ResumeView";
+
+import CreateResume from "./pages/resume/CreateResume.jsx";
+import MyResumes from "./pages/resume/MyResumes.jsx";
+import ResumeView from "./pages/resume/ResumeView.jsx";
 import ResumeEdit from "./pages/resume/ResumeEditor.jsx";
 
 /* ---------- PROJECTS ---------- */
 import ProjectSuggestions from "./pages/projects/ProjectSuggestions.jsx";
 
-import QuizPage from "./pages/QuizPage";
-import QuizHistory from "./pages/QuizHistory";
-import DoubtSolver from "./pages/DoubtSolver";
+import QuizPage from "./pages/QuizPage.jsx";
+import QuizHistory from "./pages/QuizHistory.jsx";
+import DoubtSolver from "./pages/DoubtSolver.jsx";
 
-import CalendarTasks from "./pages/tasks/CalendarTasks";
+import CalendarTasks from "./pages/tasks/CalendarTasks.jsx";
 
 /* ---------- COMMON ---------- */
-import ProtectedRoute from "./components/common/ProtectedRoute";
-import NotFound from "./pages/NotFound";
+import ProtectedRoute from "./components/common/ProtectedRoute.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 const AppRouter = () => {
   return (

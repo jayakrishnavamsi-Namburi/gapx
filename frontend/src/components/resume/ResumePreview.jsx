@@ -1,7 +1,7 @@
 // FIXED ResumePreview.jsx - Working React-PDF
 import { useState, useEffect } from "react";
 import { PDFDownloadLink, Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
-import Navbar from "../../components/common/Navbar";
+import Navbar from "../../components/common/Navbar.jsx";
 import "./ResumePreview.css";
 
 // ✅ FIXED: Proper React-PDF Styles

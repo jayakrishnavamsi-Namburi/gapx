@@ -458,10 +458,10 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Navbar from "../../components/common/Navbar";
-import { generateResumeApi } from "../../api/resumeApi";
+import Navbar from "../../components/common/Navbar.jsx";
+import { generateResumeApi } from "../../api/resumeApi.jsx";
 import { useNavigate } from "react-router-dom";
-import ResumeForm from "../../components/resume/ResumeForm";
+import ResumeForm from "../../components/resume/ResumeForm.jsx";
 
 const CreateResume = () => {
   const navigate = useNavigate();

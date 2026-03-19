@@ -4,9 +4,9 @@ import {
   getSingleRoadmapApi,
   updateProgressApi,
 } from "../../api/roadmapApi";
-import Navbar from "../../components/common/Navbar";
-import RoadmapProgress from "../../components/roadmap/RoadmapProgress";
-import TopicCheckbox from "../../components/roadmap/TopicCheckbox";
+import Navbar from "../../components/common/Navbar.jsx";
+import RoadmapProgress from "../../components/roadmap/RoadmapProgress.jsx";
+import TopicCheckbox from "../../components/roadmap/TopicCheckbox.jsx";
 import LoadingSpinner from "../../components/common/LoadingSpinner.jsx";
 import "./checkbox.css";
 const RoadmapDetail = () => {

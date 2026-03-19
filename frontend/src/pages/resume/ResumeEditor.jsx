@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import Navbar from "../../components/common/Navbar";
+import Navbar from "../../components/common/Navbar.jsx";
 import { getSingleResumeApi } from "../../api/resumeApi";
 import axios from "axios";
 
